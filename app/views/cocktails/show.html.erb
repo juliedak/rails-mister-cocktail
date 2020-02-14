@@ -1,5 +1,5 @@
 <div class="card-product">
-  <img src="<%= @cocktail.image_url %>" alt="<%=@cocktail.name%>"/>
+  <%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill %>
   <div class="card-product-infos">
     <h2><%= @cocktail.name %></h2>
       <% @cocktail.doses.each do |dose|%>
